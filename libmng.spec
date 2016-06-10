@@ -1,6 +1,6 @@
 Name: libmng
-Version: 1.0.10
-Release: 7
+Version: 2.0.3
+Release: 1
 URL: http://www.libmng.com/
 Summary: Library for Multiple-image Network Graphics support
 # This is a common zlib variant.
@@ -62,4 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/*
 %doc %{_mandir}/man3/*
 %doc %{_mandir}/man5/*
+%{_libdir}/pkgconfig/libmng.pc
 
