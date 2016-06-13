@@ -10,7 +10,6 @@ Group: System/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: zlib-devel
 BuildRequires: libjpeg-devel
-BuildRequires: lcms-devel
 BuildRequires: libtool
 
 %package devel
@@ -39,7 +38,7 @@ cat unmaintained/autogen.sh | tr -d \\r > autogen.sh
 chmod 755 autogen.sh
 [ ! -x ./configure ] && ./autogen.sh --help # generate, but don't run
 %configure --enable-shared --disable-static --with-zlib --with-jpeg \
-	--with-gnu-ld --with-lcms
+	--with-gnu-ld
 make %{?_smp_mflags}
 
 %install
