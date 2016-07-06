@@ -1,6 +1,6 @@
 Name: libmng
-Version: 1.0.10
-Release: 7
+Version: 2.0.3
+Release: 1
 URL: http://www.libmng.com/
 Summary: Library for Multiple-image Network Graphics support
 # This is a common zlib variant.
@@ -10,7 +10,6 @@ Group: System/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: zlib-devel
 BuildRequires: libjpeg-devel
-BuildRequires: lcms-devel
 BuildRequires: libtool
 
 %package devel
@@ -39,7 +38,7 @@ cat unmaintained/autogen.sh | tr -d \\r > autogen.sh
 chmod 755 autogen.sh
 [ ! -x ./configure ] && ./autogen.sh --help # generate, but don't run
 %configure --enable-shared --disable-static --with-zlib --with-jpeg \
-	--with-gnu-ld --with-lcms
+	--with-gnu-ld
 make %{?_smp_mflags}
 
 %install
@@ -62,4 +61,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/*
 %doc %{_mandir}/man3/*
 %doc %{_mandir}/man5/*
+%{_libdir}/pkgconfig/libmng.pc
 
