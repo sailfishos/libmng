@@ -1,6 +1,6 @@
 Name: libmng
 Version: 2.0.3
-Release: 1
+Release: 2
 URL: http://www.libmng.com/
 Summary: Library for Multiple-image Network Graphics support
 # This is a common zlib variant.
@@ -39,7 +39,7 @@ chmod 755 autogen.sh
 [ ! -x ./configure ] && ./autogen.sh --help # generate, but don't run
 %configure --enable-shared --disable-static --with-zlib --with-jpeg \
 	--with-gnu-ld
-make %{?_smp_mflags}
+%make_build
 
 %install
 %make_install
