@@ -1,3 +1,6 @@
+* Thu Jun 10 2021 Niels Breet <niels.breet@jolla.com> - 2.0.3-2
+- Fix the changelog. Contributes to JB#52914
+
 * Fri Jun 10 2016 Pekka Vuorela <pekka.vuorela@jollamobile.com> - 2.0.3-1
 - Update to new version. Contributes to JB#35132
 
@@ -102,7 +105,7 @@
 * Thu May  3 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.0.1-1
 - 1.0.1
 
-* Wed Feb 28 2001 Trond Eivind Glomsrød <teg@redhat.com>
+* Wed Feb 28 2001 Trond Eivind GlomsrÃ¸d <teg@redhat.com>
 - remove bogus symlink trick
 
 * Mon Feb 26 2001 Bernhard Rosenkraenzer <bero@redhat.com>
